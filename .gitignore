@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build outputs
+dist/
+dist-ssr/
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+
+# Temporary and packaging artifacts
+scratch/
+*.zip
+*.tsbuildinfo
+Release/
+vta-analysis-package/
+
+# Build binaries and C/C++ build artifacts
+*.exe
+*.dll
+*.o
+*.obj
+*.a
+*.lib
+*.pdb
+*.idb
+*.gch
+*.pch
+build/
+CMakeFiles/
+CMakeScripts/
+_deps/
+CMakeCache.txt
+
+# Preserve bundled precompiled binaries for builder
+!builder/bin/*.exe
+!builder/bin/*.dll
+
+# Private gateway config (copy from gateway.example.json)
+gateway.json
+**/gateway.json
+!gateway.example.json
+!gateway.exsample.json
+!tools/llm-gateway/config/gateway.example.json
